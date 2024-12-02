@@ -8,7 +8,7 @@ JavaScript para a lógica de programação e interatividade.
 Sprites e imagens customizadas para criar a estética única do universo de Detona Ralph.
 
 ## Funcionalidades 
-Sistema de Pontuação: Acompanhe sua pontuação à medida que progride no jogo e desafie seus amigos a superá-la, clique no quadrado que o Ralph se encontre
+Sistema de Pontuação: Acompanhe sua pontuação à medida que progride no jogo e desafie seus amigos a superá-la, clique no quadrado que o Ralph se encontre.
 
 ## Como Jogar
 Clone este repositório para sua máquina local.
