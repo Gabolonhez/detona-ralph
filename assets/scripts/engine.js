@@ -4,6 +4,7 @@ const state = {
         enemy: document.querySelector(".enemy"),
         timeLeft: document.querySelector("#time-left"),
         score: document.querySelector("#score"),
+        live: document.querySelector("#live"),
     },
     values: {
         gameVelocity: 1000,
@@ -16,6 +17,7 @@ const state = {
         countDownTimerId: setInterval(countDown, 1000),
     }
 };
+
 
 function playSound(audioName) {
     let audio = new Audio(`./assets/sounds/${audioName}.m4a`);
@@ -31,7 +33,19 @@ function countDown() {
     if (state.values.currentTime <= 0) {
         clearInterval(state.actions.countDownTimerId);
         clearInterval(state.actions.timerId); 
-        alert("Game Over! Your result is" + state.values.result);
+        state.values.lives--; 
+        state.view.live.textContent = state.values.lives; 
+        alert("Game Over! Your result is " + state.values.result);
+        if (state.values.lives > 0) {
+            state.values.currentTime = 60;
+            state.values.result = 0;
+            state.view.score.textContent = state.values.result;
+            state.view.timeLeft.textContent = state.values.currentTime;
+            state.actions.timerId = setInterval(randomSquare, 1000);
+            state.actions.countDownTimerId = setInterval(countDown, 1000); 1  
+        } else {
+            alert("Game Over! No lives left.");
+        }
     }
 }
 
