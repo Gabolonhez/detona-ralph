@@ -10,7 +10,7 @@ Bem-vindo ao JSGame Detona Ralph! Neste repositório, você encontrará um jogo 
 - `JavaScript`
 
 ## 🎯 Funcionalidades 
-[x]: Acompanhe sua pontuação à medida que progride no jogo e desafie seus amigos a superá-la, clique no quadrado que o Ralph apareça.
+- [x] : Acompanhe sua pontuação à medida que progride no jogo e desafie seus amigos a superá-la, clique no quadrado que o Ralph apareça.
 
 ## 🛠️ Como Jogar
 1. Clone este repositório para sua máquina local.
